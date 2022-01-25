@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" />
+
+    <title>Guia-Hoteles</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./prices.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./conditions.html">Terminos y condiciones</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./contacts.html">Contacto</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="jumbotron">
+
+
+
+
+        <h1>Contactenos</h1>
+
+
+    </div>
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="./index.html">Home</a>
+                </li>
+
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+        </nav>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="provincia">Provincia</label>
+                    <select name="provincia" id="provincia" class="form-control">
+                       <option value="">Cartagena</option>
+                       <option value="">Bogotá</option>
+                       <option value="">Medellín</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario"></label>
+                <textarea class="form-control" name="comentario" id="comentario" rows="10"></textarea>
+
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex flex-column align-items-start card-social">
+                    <h3>Redes Sociales</h3>
+
+                    <a href="https://www.Facebook.com">
+
+                        <span>Facebook</span>
+                    </a>
+
+                    <a href="https://www.twitter.com">
+
+                        <span>Twitter</span>
+                    </a>
+
+                    <a href="https://www.instagram.com">
+
+                        <span>Instagram</span>
+                    </a>
+
+                    <a href="https://www.youtube.com">
+
+                        <span>Youtube</span>
+                    </a>
+                </div>
+
+                <div class="col-md-4 d-flex flex-column align-items-center card-office">
+                    <h3>Oficina central</h3>
+                    <address class="data">
+              <p>Lunes a Sábados 8 a 5 pm</p>
+              <p>
+                <span class="oi oi-home footer-address-icon"></span>
+                Medellín - Colombia
+              </p>
+              <p>
+                <span class="oi oi-phone footer-address-icon"></span>
+                444-45454 / 4459898
+              </p>
+              <p>
+                <span class="oi oi-inbox footer-address-icon"></span>
+              colombiaturistica@mail.com
+              </p>
+            </address>
+                </div>
+
+                <div class="col-md-4 d-flex flex-column align-items-end card-info">
+                    <h3>Nosotros</h3>
+                    <a href="#">Conócenos</a>
+                    <a href="#">Precios</a>
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

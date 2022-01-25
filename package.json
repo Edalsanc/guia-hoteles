@@ -1,0 +1,69 @@
+{
+  "name": "n",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de nodejs\u001b[D\u001b[D\u001b[D\u001b[D\u001b[N\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ scss/",
+    "watch:scss": "onchange 'scss/*.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* --out-dir dist/img && imagemin img/slider/* --out-dir dist/img/slider",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin prices.html -d dist --htmlmin -o dist/prices.html && usemin contacts.html -d dist --htmlmin -o dist/contacts.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://esanchezRojas@bitbucket.org/esanchezRojas/guia-hoteles.git"
+  },
+  "author": "Edwin Sanchez",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/esanchezRojas/guia-hoteles#readme",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^4.5.2",
+    "bootstrap-icons": "^1.0.0",
+    "concurrently": "^5.3.0",
+    "jquery": "^3.5.1",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.16.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-cli": "^1.0.1",
+    "gulp-usemin": "^0.3.29",
+    "del": "^5.0.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.0",
+    "grunt": "^1.3.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1",
+    "grunt-contrib-sass": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "htmlmin": "0.0.7",
+    "imagemin-cli": "^5.0.0",
+    "jit-grunt": "^0.10.0",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/esanchezRojas/guia-hoteles/issues"
+  }
+}
